@@ -27,4 +27,5 @@ org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=59,64,66
 org.eclipse.ui.workbench.INACTIVE_TAB_TEXT_COLOR=187,187,187
 org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|D2Coding|15.75|0|WINDOWS|1|-21|0|0|0|400|0|0|0|0|3|2|1|49|D2Coding;
 org.eclipse.wst.sse.ui.textfont=1|D2Coding|15.75|0|WINDOWS|1|-21|0|0|0|400|0|0|0|0|3|2|1|49|D2Coding;
+overridepresentation=true
 terminal.views.view.font.definition=1|D2Coding|15.75|0|WINDOWS|1|-21|0|0|0|400|0|0|0|0|3|2|1|49|D2Coding;

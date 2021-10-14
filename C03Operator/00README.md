@@ -11,7 +11,15 @@
 10. CompareOper   : 비교연산자
 11. ThreeOper	  : 삼항연산자 (변수 = (조건식) ? 참 식 : 거짓 식)
 12. ThreeOperQuest: 삼항연산자 퀴즈
-
+-------------------------------------------------------------------------
+13. InfinityNan   : 정수 0으로 나누기 (+try,catch)
+14. InfinityNan2  : 실수 0으로 나누기
+15. CompareOper2  : 
+16. CompareOper3  : 
+17. LogicalOper   : 
+18. LogicalOper2  : 
+19. BitLogicalOper : 
+20. BitLogicalOper2 : 
 
 # 연산자와 연산식
 ## 1. 연산 Operations
