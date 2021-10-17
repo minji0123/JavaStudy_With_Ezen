@@ -25,7 +25,7 @@
  * E : 60 점 미만
  */
 //import java.util.Scanner;
-public class IfStaatement04 {
+public class IfStatement04 {
 
 	public static void main(String[] args) {
 //		

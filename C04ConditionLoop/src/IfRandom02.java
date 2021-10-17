@@ -3,6 +3,8 @@
  * double x = Math.random()
  * 범위 : 0.0 <= x < 1.0
  * ----------------------------
+ * 경우의수 = 최대값 - 최소값 + 1
+ * 최종결과 = 난수 * 경우의 수 + 시작값
  */
 public class IfRandom02 {
 
@@ -46,12 +48,39 @@ public class IfRandom02 {
 		 * A : 95점 이상 B : 90점 이상, C : 80점 이상, D : 70점 이상, E : 60점 이상
 		 */
 		// 경우의수 = 최대값 - 최소값 + 1
-		// 최종결과 = 난수 * (경우의 수 + 1) + 시작값
+		// 최종결과 = 난수 * 경우의 수 + 시작값
 		double score = Math.random();
+		char grade = 'F';
 		int n = 100 - 60 + 1;
-		int scoreCal = (int)(score * n) + 60;
+		int scoreCal = (int)(score * n) + 60; // 경우의 수(41가지) 0~40
+		
 		System.out.println(scoreCal);
 		System.out.printf("scoreCal : y(%f), n(%d), scroeCal(%d)\n",score,n,scoreCal);
+		
+			if (scoreCal>=0 && scoreCal<=100) {
+				if(scoreCal>=95) {
+					grade = 'A';
+				}
+				else if (scoreCal>=90) {
+					grade = 'B';
+				}
+				else if (scoreCal>=80) {
+					grade = 'C';
+				}
+				else if (scoreCal>=70) {
+					grade = 'D';
+				}
+				else if (scoreCal>=60) {
+					grade = 'E';
+				}
+				else {
+					grade = grade;
+				}
+				System.out.println(grade);
+				}
+				else {
+					System.out.println("잘못된 값");
+		}
 		
 	}
 

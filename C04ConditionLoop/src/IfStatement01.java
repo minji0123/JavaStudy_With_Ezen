@@ -12,7 +12,7 @@
  * - 논리연산 && || !
  * - 비교연산 <>
  */
-public class IfStaatement01 {
+public class IfStatement01 {
 
 	public static void main(String[] args) {
 		

@@ -9,58 +9,9 @@
  *  F : 과락
  */
 public class IfRandom04 {
-
-	final static int MAX_SCORE = 100;
-	final static int MIN_SCORE= 0;
-	final static int MIN_PASS= 60;
 	
 	public static void main(String[] args) {
-		
-		double x = Math.random();
-		int score = (int)(x*(MAX_SCORE-MIN_SCORE)) + 1;
-		System.out.printf("random : (%f)(%d)\n", x,score);
-		
-		String pass = " ";
-		String msg = " ";
-		char grade = 'x';
-		
-		if (score>=0 && score<=100) {
-			if(score>=95) {
-				grade = 'A';
-				System.out.println("전액장학생");
-				System.out.println("합격");
-			}
-			else if (score>=90) {
-				grade = 'B';
-				System.out.println("반액장학생");
-				System.out.println("합격");
-			}
-			else if (score>=80) {
-				grade = 'C';
-				System.out.println("내년을 기약하세요");
-				System.out.println("합격");
-			}
-			else if (score>=70) {
-				grade = 'D';
-				System.out.println("내년을 기약하세요");
-				System.out.println("합격");
-			}
-			else if (score>=60) {
-				grade = 'E';
-				System.out.println("좀 더 노력하세요");
-				System.out.println("합격");
-			}
-			else {
-				grade = grade;
-				System.out.println("과락");
-			}
-			System.out.println("성적 : "+grade);
-			
-		}
-		else {
-			System.out.println("잘못된 값");
-		}
-		
+	
 		
 		// 내 풀이
 //		double score = Math.random();

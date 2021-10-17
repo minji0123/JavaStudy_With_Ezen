@@ -28,10 +28,12 @@ public class IfRandom01 {
 		
 		
 		// 주사위 : 1부터 6까지의 수
-		double x = Math.random();
-		double y = x*6;
-		int z = (int)y;
-		int dice = (int)(z+1);
+		double x = Math.random(); // 랜덤 수 발생
+		double y = x*6; // 경우의 수는 6개
+		int z = (int)y; // 캐스팅변환 double -> int
+		
+		
+		int dice = (int)(z+1); // +1 해주기
 		int last = (int)(x*6.0)+1;
 //		System.out.println("주사위값 : "+dice);
 		System.out.printf("주사위값 : x(%f), y(%f) , z(%d),dice(%d)\n", x, y, z,dice);

@@ -28,50 +28,53 @@ public class IfRandom05 {
 	final static int GRADE_E   = 60;
 	
 	public static void main(String[] args) {
-		double x = Math.random();
-		int score = (int)(x * (MAX_SCORE - MIN_SCORE)) + 1;
+		double randomNum = Math.random();
+		int score = (int)(randomNum * (MAX_SCORE - MIN_SCORE)) + 1;
 		
-		System.out.printf("random:(%f)(%d)%n", x, score);
+		// 확인용 출력
+		System.out.printf("random:(%f)(%d)%n", randomNum, score);
+		// random:(0.451667)(46)
 		
-		String pass = ""; // 합격여부
-		String msg  = ""; // 출력메시지
+		String passMsg = ""; // 합격여부
+		String printMsg  = ""; // 출력메시지
 		char grade  = 'X';   // 등급
 		
 		if(score >= MIN_PASS && score <= MAX_SCORE) {
-			pass = "합격";
+			passMsg = "합격";
 			if((score >= GRADE_A)) {
 				grade = 'A';
-				msg = "전액 장학생";
+				printMsg = "전액 장학생";
 			}
 			else if(score >= GRADE_B) {
 				grade = 'B';
-				msg = "반액 장학생";
+				printMsg = "반액 장학생";
 			}
 			else if(score >= GRADE_C) {
 				grade = 'C';
-				msg = "내년을 기약";
+				printMsg = "내년을 기약";
 			}
 			else if(score >= GRADE_D) {
 				grade = 'D';
-				msg = "내년을 기약";
+				printMsg = "내년을 기약";
 			}
 			else if(score >= GRADE_E) {
 				grade = 'E';
-				msg = "좀 더 노력하세요";
+				printMsg = "좀 더 노력하세요";
 			}			
 		}
 		else if(score >= MIN_SCORE && score < MIN_PASS) { 
-			pass = "과락";
+			passMsg = "과락";
 			grade = 'F';
-			msg = "다시 도전하세요";
+			printMsg = "다시 도전하세요";
 		}
 		else {
-			pass = "오류";
+			passMsg = "오류";
 			grade = 'X';
-			msg = "잘못된 점수입니다.";
+			printMsg = "잘못된 점수입니다.";
 		}
 		
-		System.out.printf("[%d][%c]->[%s][%s]\n", score, grade, pass, msg);
+		System.out.printf("[%d][%c]->[%s][%s]\n", score, grade, passMsg, printMsg);
+		// [46][F]->[과락][다시 도전하세요]
 	}
 	
 
