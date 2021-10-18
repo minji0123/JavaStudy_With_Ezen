@@ -3,6 +3,7 @@
  * -----------------------------------------
  * 
  */
+import java.io.BufferedReader;
 import java.util.Scanner;
 
 public class Example07 {
@@ -51,6 +52,8 @@ public class Example07 {
 //				System.out.println(kindOfMoney+">"+balance);
 		}//while문 run		
 		System.out.println("프로그램 종료");
+		
+
 	}
 
 }
