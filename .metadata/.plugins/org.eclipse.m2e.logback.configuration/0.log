@@ -34,3 +34,9 @@
 2021-10-18 09:21:50,483 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2021-10-18 10:39:45,813 [sentry-pool-1-thread-1] WARN  i.s.c.AbstractConnection.lockdown - Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
 2021-10-18 19:34:20,553 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-10-19 09:33:29,862 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-10-19 11:57:31,280 [sentry-pool-1-thread-3] WARN  i.s.c.AbstractConnection.lockdown - Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
+2021-10-19 19:36:46,523 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-10-19 19:51:49,466 [sentry-pool-1-thread-1] WARN  i.s.c.AbstractConnection.lockdown - Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
+2021-10-19 19:58:25,744 [sentry-pool-1-thread-2] WARN  i.s.c.AbstractConnection.lockdown - Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
+2021-10-19 20:45:09,037 [sentry-pool-1-thread-3] WARN  i.s.c.AbstractConnection.lockdown - Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
