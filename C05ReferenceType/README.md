@@ -30,7 +30,14 @@
 22. TwoArray991		   : 2차원 배열(9*9)에 구구단 값을 넣어서 출력해라 (배열크기 : 10)
 23. TwoArray992		   : 배열 (m*n)을 만들어 m*n의 값을 넣고 출력하기<br>
 ---------------------------------------------------------------------------------
-24. 
+24. Season,SeasonKorean: 열거형 설명
+25. SeasonMain		   : 열겨형 출력 (if문 사용)
+26. SeasonKoreanMain   : 메소드 설명 (name, values, ordinal)
+27. SeasonKoreanMain2  : 메소드 설명 (valueOf), 열거형 출력 (switch문 사용)
+28. SeasonKoreanMain3  : String 열거형
+29. Today			   : Calendar라이브러리
+30. TodayWeekEnum	   : [문제] 요일을 열거형으로 바꿔서 처리하라
+31. TodayWeekEnum2     : [문제] 요일을 상수형으로 바꿔서 처리하라
 
 
 ## 1. 원시타입_기본타입
