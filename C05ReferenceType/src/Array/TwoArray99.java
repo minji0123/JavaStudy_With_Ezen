@@ -1,6 +1,5 @@
 /*
- * [문제]
- * 2차원 배열(9*9)에 구구단 값을 넣어서 출력해라
+ * [문제] 2차원 배열(9*9)에 구구단 값을 넣어서 출력해라
  * - 1단부터 9단까지
  * - 1단계 : 배열의 곱셈의 값을 넣음
  * - 2단계 : 배열을 순회하면서 출력
@@ -23,14 +22,14 @@ public class TwoArray99 {
 			System.out.println("-----------------------------------------");
 		}
 		
-		// 2. for문안에 값을 length를 사용해서 출력하기 // 모르겠당
-		for (int m=0; m<gg.length; m++) {
-			for(int n = 0; n <gg[m].length; n++) {
-				int mn = gg[m][n];
-				System.out.printf("%d * %d = %d\n",m+1,n+1,mn ); // 
-			}
-			System.out.println("-----------------------------------------");
-		}
+//		// 2. for문안에 값을 length를 사용해서 출력하기 // 모르겠당
+//		for (int m=0; m<gg.length; m++) {
+//			for(int n = 0; n <gg[m].length; n++) {
+//				int mn = gg[m][n];
+//				System.out.printf("%d * %d = %d\n",m+1,n+1,mn ); // 
+//			}
+//			System.out.println("-----------------------------------------");
+//		}
 		
 		
 	}

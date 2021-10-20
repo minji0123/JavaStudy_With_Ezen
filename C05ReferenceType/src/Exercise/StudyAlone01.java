@@ -33,7 +33,7 @@ public class StudyAlone01 {
 		// 처음에 생성만 해놨던 배열 초기화도 가능하다.
 		// 생성만 했었기 때문에 null이 아니라 그냥 빈칸이여서, 값을 넣어줄 수 있다.
 		score1 = new int[] {1,2,3,4,5};
-		score2 = new int [] {1,2,3,4,5};
+		score2 = new int[] {1,2,3,4,5};
 
 		
 		// 3. 배열 값
@@ -43,7 +43,6 @@ public class StudyAlone01 {
 		// ...
 		// 3-2 그냥 출력하면 배열이 가리키는 힙 메모리의 주소값이 나온다.
 		System.out.println(score1); // [I@7d6f77cc
-
 		
 		// 4. 배열 전체 출력
 		// 4-1 printf로 출력

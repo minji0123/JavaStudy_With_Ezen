@@ -10,9 +10,22 @@ package Array;
 
 public class ArrayExample02 {
 
+	// 02 9열9행을 만들고, 값을 넣음
+	final static int MAX_ROW = 9; // 9열
+	final static int MAX_COL = 9; // 9행
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		int [][] td = new int [MAX_ROW][MAX_COL];
+		int cnt = 0;
+		
+		for (int row=0; row<MAX_ROW; row++) {
+			for (int col=0; col< MAX_COL; col++) {
+				td[row][col] = ++cnt;
+				System.out.printf("[%2d]", td[row][col]);
+			}
+			System.out.println();
+		}
 	}
 
 }

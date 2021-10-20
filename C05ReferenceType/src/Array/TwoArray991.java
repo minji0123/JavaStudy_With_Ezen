@@ -13,25 +13,25 @@ public class TwoArray991 {
 		int [][]gg = new int[10][10];
 		
 		// 1. for문안에 값을 넣어서 출력하기
-//		for (int m=1; m<=9; m++) {
-//			for(int n = 1; n <=9; n++) {
-//				int mn = m*n;
-////				System.out.printf("%d * %d = %d\n",m,n,mn );//잘 나오나 확인차 출력해봄
-//				gg [m][n] =mn; // 배열은 0부터 시작하기 때문에 -1해줘야 값이 잘 나옴
-//				System.out.printf("%d * %d = %d\n",m,n,mn );
-//			}
-//			System.out.println("-----------------------------------------");
-//		}
-		
-		// 2. for문안에 값을 length를 사용해서 출력하기 // 망했당
-		for (int m=1; m<gg.length; m++) {
-			for(int n = 1; n <gg[m].length; n++) {
-				int mn = gg[m][n];
-				System.out.printf("%d * %d = %d\n",m,n,mn ); // 
+		for (int m=1; m<=9; m++) {
+			for(int n = 1; n <=9; n++) {
+				int mn = m*n;
+//				System.out.printf("%d * %d = %d\n",m,n,mn );//잘 나오나 확인차 출력해봄
+				gg [m][n] =mn; // 배열은 0부터 시작하기 때문에 -1해줘야 값이 잘 나옴
+				System.out.printf("%d * %d = %d\n",m,n,mn );
 			}
 			System.out.println("-----------------------------------------");
 		}
 		
+		// 2. for문안에 값을 length를 사용해서 출력하기 // 망했당
+//		for (int m=1; m<gg.length; m++) {
+//			for(int n = 1; n <gg[m].length; n++) {
+//				int mn = gg[m][n];
+//				System.out.printf("%d * %d = %d\n",m,n,mn ); // 
+//			}
+//			System.out.println("-----------------------------------------");
+//		}
+//		
 		
 	}
 

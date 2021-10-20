@@ -12,7 +12,7 @@ public class TwoArrayInt3 {
 		// 1. 배열에 null값 입력
 		int [][] scores = new int[2][]; // 2행 ?열
 		System.out.println("scores.length : "+scores.length+"행"); 
-		// scores.length : 2
+		// scores.length : 2행이구나
 		
 		// 2. 행과 열 크기 출력
 		for (int row = 0; row < scores.length; row++) {
