@@ -38,6 +38,7 @@
 29. Today			   : Calendar라이브러리
 30. TodayWeekEnum	   : [문제] 요일을 열거형으로 바꿔서 처리하라
 31. TodayWeekEnum2     : [문제] 요일을 상수형으로 바꿔서 처리하라
+32. ArrayExample4	   : [문제] 2행 4열인 배열을, 4행 2열로 출력하기
 
 
 ## 1. 원시타입_기본타입
