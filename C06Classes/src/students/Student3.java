@@ -14,6 +14,8 @@
 package students;
 
 class Student3 {
+	// 필드
+	// main에서 변수.sno <-- 이렇게 사용 가능
 	String sno;
 	String name;
 	String subject;
@@ -63,6 +65,7 @@ class Student3 {
 		// abc.sno = "2000";
 		// abc.name = "김박사";
 		abc.subject = noname.subject;
+		
 		
 		System.out.println("[abc]");
 		System.out.println("학번: " + abc.sno);

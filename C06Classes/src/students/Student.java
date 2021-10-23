@@ -1,44 +1,96 @@
 /*
- * 클래스는 속성과 메소드로 구성
+ * 학생정보 클래스
  */
-
 package students;
 
-public class Student {
+class Student {
 
-		// 1. 필드
-		// 학생이 가질 수 있는 속성 (맴버필드)
-		// property(자원) field(분야) attribute(속성)
-		String sNumber; // 학번
-		String name;	// 이름
-		String major;	// 학과
-		int age;		// 나이
-		
-	public static void main(String[] args) {
-		//2. 생성자로 정의 안해주면 사용 불가능
-//		sNumber = 1;
-		
-		// 3. 로컬 변수 선언
-		int x = 10;
-		String n = new String("홍길동");
-		
-		// 객체 생성
-		// 4-1. student1 객체 생성
-		Student student1 = new Student();
-		System.out.println("학번 : "+ student1.sNumber);
-		System.out.println("이름 : "+ student1.name);
-		System.out.println("학과 : "+ student1.major);
-		System.out.println("나이 : "+ student1.age);
+	// 1. 필드
+	// 1-1 학생 필드
+	// main에서 변수.sno <-- 이렇게 사용 가능
+	String sno; 	// 학번
+	String name; 	// 이름
+	String subject; // 학과
+	String major;	// 학년
+	School school;
+	Student student;
+	
+	
+	// 1-2 학교 정보 필드
+//	// 이 필드는 학생 클래스가 아니라, 학교 클래스에 있어야 잘 어울린다.
+//	String school_name;		// 학교이름
+//	String school_buildyear;// 설립연도
+//	String school_address;	// 학교주소
 
-		// 4-2. student2 객체 생성
-		Student student2 = new Student();
-		System.out.println("학번 : "+ student2.sNumber);
-		System.out.println("이름 : "+ student2.name);
-		System.out.println("학과 : "+ student2.major);
-		System.out.println("나이 : "+ student2.age);
-		
-		// 4-3. 두 객체는 다르다.
-		System.out.println("student1 = student2 ? : "+(student1 == student2));
+	// 2. 생성자
+	// 2-1 기본 생성자
+	Student() { 
+		System.out.println("생성함수 : 기본생성자");
+	}
+	
+	// 2-2 생성자
+	// 생성자 오버로딩
+
+	public Student(String sno, String name, String subject, String major) {
+		System.out.println("생성함수 : 학생정보");
+		this.sno = sno;
+		this.name = name;
+		this.subject = subject;
+		this.major = major;
+	}
+	
+	
+	public Student(String sno, String name, String subject, String major, School school) {
+		System.out.println("생성함수 : 학생정보, 학교정보");
+		this.sno = sno;
+		this.name = name;
+		this.subject = subject;
+		this.major = major;
+		this.school = school;
+	}
+	Student(Student student){
+		this.sno = student.sno;
+		this.name = student.name;
+		this.subject = student.subject;
+		this.major = student.major;
+		this.school = student.school;
+	}
+	void setSchool(School school) {
+		this.school = school;
+	}
+	
+	School getSchool() {
+		return this.school;
 	}
 
+		// 3. 메소드
+		// 리턴과 매개변수가 없음
+		public void printStudent() {
+		// 3-1 리턴을 하게 되면 리턴 밑의 명령이 생략되므로 오류가 발생한다.
+		//return;
+		System.out.println("[학생정보]");
+		
+		// 3-2 void로 해놓았기 때문에 return 할 수 없다.
+//		int x=0;
+//		if (x==0) { return; }
+		if(this.sno == null) {
+			System.out.println("학생 정보가 비어 있습니다.");
+			return;
+		}
+		
+		System.out.println("학번 : " + this.sno);
+		System.out.println("이름 : " + this.name);
+		System.out.println("학과 : " + this.subject);
+		System.out.println("학년 : " + this.major);
+		System.out.println("---------------------------------");
+//		System.out.println("학교정보 : " + this.school);
+//		System.out.println("학교이름 : " + this.school.name);
+		if (this.school==null) {
+			System.out.println("학교 정보가 비어 있습니다.");
+			return;
+		}
+		this.school.printSchool();
+		
+	}
+		
 }
