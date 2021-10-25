@@ -26,21 +26,11 @@ public class Calcx {
 	int numCount = 0;
 	String[][] history = new String[ROW][COL];
 	
-	Calcx(){}
-	
-//	void setRecord(double numCount) {
-//		this.numCount = numCount;
-//	}
-	
-	double getTotal() {
-		return this.result;
-	}
-	
 	double letPlus(double x) {
 		history[this.numCount][0] = "" + x;
 		history[this.numCount][1] = "+";
 		this.numCount++;
-		this.result = this.result + x;
+		this.result += x;
 		return this.result;
 	}
 	
@@ -48,7 +38,7 @@ public class Calcx {
 		history[this.numCount][0] = "" + x;
 		history[this.numCount][1] = "-";
 		this.numCount++;
-		this.result = this.result- x;
+		this.result -= x;
 		return this.result;
 	}
 	
@@ -64,7 +54,7 @@ public class Calcx {
 		history[this.numCount][0] = "" + x;
 		history[this.numCount][1] = "/";
 		this.numCount++;
-		this.result = this.result / x;
+		this.result /= x;
 		return this.result;
 	}
 	
@@ -92,6 +82,7 @@ public class Calcx {
 		return numCount;
 	} 
 	
+	// 계산 히스토리 출력
 	void printHistory() {
 		System.out.print("0");
 		for(int row=0; row<this.numCount; row++) {
@@ -100,6 +91,7 @@ public class Calcx {
 			}
 		}
 	}
+	
 	// 이력을 사용한 재계산
 	double calHistory() {
 		double calResult = 0.0;
@@ -117,13 +109,9 @@ public class Calcx {
 			case "/":
 				calResult /= Double.parseDouble(this.history[row][0]);
 				break;
-			} 
+			}
 		}
 		return calResult;
 	}
-	
-	
-	
-	
 	
 }

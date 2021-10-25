@@ -1,43 +1,24 @@
 /*
  * 패키지 : 
- * 같은 패키지 안에 있는 클래스는 import 하지 않고 사용할 수 있다.
- * 접근제한자가 없어도 (default)여도 사용할 수 있다.
+ * 다른 패키지에 있는 클래스를 사용하기 위한 조건
+ * 	public으로 되어있어야 한다.
  */
-package calc;
+package useCalc;
+// calc 패키지의 Calc 클래스를 사용하고 싶다.
+// import 하면 된다.
+import calc.Calc;
 
-public class CalcMain {
+public class UseCalcMain {
 	
-	// calc1을 생성해줌
-	// 기본 생성자를 호출한 인스턴스
-	// 메소드 step1을 실행해 주기 위한 인스턴스
-//	Calc calc1 = new Calc();
-	
-	// calc2를 생성해줌
+
 	Calc calc2;
-
-	CalcMain(){
+	UseCalcMain(){
 		System.out.println("2. CalcMain()");
 		calc2 = new Calc();
 	}
 	
-	// 메소드 main
-	public static void main(String[] args) {
-		System.out.println("1. CalcMain : main");
-		CalcMain calcMain = new CalcMain();
-		calcMain.calc2.plus(99);
-		
-//		System.out.println(calcMain.calc2.total);
-		System.out.println(Calc.calcStatic(calcMain.calc2));
-		
-		
-//		calc.step1();
-//		calc.step2();
-//		calc.step3();
-//		calc.step4();
-		calcMain.step4();
-		
-	}
 
+	
 	void step1() {
 		System.out.println("[step1]");
 		calc2.plus(10);
@@ -85,7 +66,17 @@ public class CalcMain {
 		calc2.sums(new int[] {1,2,3,4,5,6,7,8,9,10});
 		calc2.print("[step4] 가변인자 덧셈");
 	}
-
-
+	
+	
+	// 메소드 main
+	public static void main(String[] args) {
+		System.out.println("1. CalcMain : main");
+		UseCalcMain calc = new UseCalcMain();
+//		calc.step1();
+//		calc.step2();
+		calc.step3();
+		calc.step4();
+		
+	}
 }
 

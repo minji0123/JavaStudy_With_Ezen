@@ -8,61 +8,78 @@ package calc;
 
 public class Calc {
 
-	int total;
-//	Calc(){
-//	System.out.println("3. Calc");
-//	}
-//	Calc(int total){
-//		this.total = total;
-//	}
+	public int total;
+//	private int total;
 	
-	int plus(int val) {
+	
+	public Calc(){
+	System.out.println("3. Calc");
+	}
+	Calc(int total){
+		this.total = total;
+	}
+	
+	
+	static int calcStatic(Calc calc) {
+		int tot =calc.total;
+		return tot;
+	}
+	
+	
+	static void calc(Calc calc) {
+		int tot =calc.total;
+		System.out.println("tot : "+tot);
+	}
+	
+	
+	
+	public int plus(int val) {
 		this.total += val;
 		return this.total;
 	}
-	int minus(int val) {
+	public int minus(int val) {
 		this.total -=val;
 		return this.total;
 	}
-	int multiple(int val) {
+	public int multiple(int val) {
 		this.total *=val;
 		return this.total;
 	}
-	int divide(int val) {
+	public int divide(int val) {
 		this.total /=val;
 		return this.total;
 	}
-	int mod(int val) {
+	public int mod(int val) {
 		this.total %=val;
 		return this.total;
 	}
-	int total() {
+	public int total() {
 		return this.total;
 	}
 	
 	
-	void print() {
+	public void print() {
 		System.out.println("total = "+this.total);
 	}
-	void clear() {
+	public void clear() {
 		this.total = 0;
 	}
 	
-	int sum(int[] values) {
+	public int sum(int[] values) {
 		for(int val : values) {
 			this.total +=val;
 		}
 		return this.total;
 	}
 	
-	int sums(int ... values) {
+	public int sums(int ... values) {
 		for(int val : values) {
 			this.total +=val;
 		}
 		return this.total;
 	}
 	
-	void print(String title) {
+	public void print(String title) {
 		System.out.println(title+" total = "+this.total);
 	}
 	
