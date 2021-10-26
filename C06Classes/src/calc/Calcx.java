@@ -94,8 +94,12 @@ public class Calcx {
 	
 	// 이력을 사용한 재계산
 	double calHistory() {
+		// 1. 메소드 안에서 결과 저장용으로 선언한 지역 변수
 		double calResult = 0.0;
+		// 2. for 문으로 String[][] history의 행을 this.numCount수만큼 늘려줌
 		for(int row=0; row<this.numCount; row++) { 
+			// 3. switch 문으로 String[][] history의 열 두번째 값[1]을 판단해서 
+			// 결과값에 String[][] history의 열 첫번째 값[0]을 계산해줌
 			switch(this.history[row][1]) {
 			case "+":
 				calResult += Double.parseDouble(this.history[row][0]);
@@ -111,6 +115,7 @@ public class Calcx {
 				break;
 			}
 		}
+		// 4. 결과 출력
 		return calResult;
 	}
 	
