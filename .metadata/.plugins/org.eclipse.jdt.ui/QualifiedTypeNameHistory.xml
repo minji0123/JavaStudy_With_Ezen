@@ -10,4 +10,5 @@
     <fullyQualifiedTypeName name="calc.Calc"/>
     <fullyQualifiedTypeName name="calcMultiple.CalcMultiple"/>
     <fullyQualifiedTypeName name="calcDivide.CalcDivide"/>
+    <fullyQualifiedTypeName name="exceptionTWR.AutoCloseableObj"/>
 </qualifiedTypeNameHistroy>
