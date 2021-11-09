@@ -11,4 +11,6 @@
     <fullyQualifiedTypeName name="calcMultiple.CalcMultiple"/>
     <fullyQualifiedTypeName name="calcDivide.CalcDivide"/>
     <fullyQualifiedTypeName name="exceptionTWR.AutoCloseableObj"/>
+    <fullyQualifiedTypeName name="exercise.exercise04.Car.Engine"/>
+    <fullyQualifiedTypeName name="exercise.exercise06.teacher.Chatting.Chat"/>
 </qualifiedTypeNameHistroy>
