@@ -13,4 +13,6 @@
     <fullyQualifiedTypeName name="exceptionTWR.AutoCloseableObj"/>
     <fullyQualifiedTypeName name="exercise.exercise04.Car.Engine"/>
     <fullyQualifiedTypeName name="exercise.exercise06.teacher.Chatting.Chat"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>

@@ -1,8 +1,12 @@
 package exercise.exercise7;
 
+import java.util.Arrays;
+
 public class LoginRun2 {
 
 	public static void main(String[] args) {
+		
+		
 		try {
 			login("white", "12345");
 		}
@@ -58,5 +62,6 @@ public class LoginRun2 {
 		}
 		
 	}
+	
 
 }
